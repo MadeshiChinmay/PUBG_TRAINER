@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+            crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='index.js'></script>
+    <title>THE-GAME</title>
+    <style>
+        canvas{
+            background-image: url("maxresdefault.jpg");
+            box-shadow: 0 0 10px 10px white inset;
+            /* border:groove */
+        }
+        ul{
+            background-image: url("man.gif");
+            /* background-size: cover; */
+            position:relative;
+            background-size:cover;
+            background-position-x:center; 
+            
+            margin-left: 900;
+            box-shadow: 0 0 8px 8px whitesmoke inset;
+        }
+                    .fa{
+            padding: 20px;
+            font-size: 20px;
+            width: 80px;
+            text-align:center;
+            text-decoration: none;
+            margin: 5px 2px;
+            }
+        h1 {
+            
+            font-size: 30px;
+            text-shadow: 2px 2px 4px white;
+        }
+        .fa-facebook {
+            position:relative;
+            margin-top:70%;
+            background:#3B5998;
+            color: white;
+            border-radius:40%;
+        }
+        .fa-instagram {
+        background:#cc0052;
+        color: white;
+        border-radius:40%;
+        }
+        #f{
+            font-size: 30px;
+            text-shadow: 2px 2px 4px white;
+        }
+        .fa-google {
+        background: #dd4b39;
+        color: white;
+        border-radius:40%;
+        }
+                audio { 
+        display:none;
+        }
+        #hello{
+            font-size: 2
+        }
+        
+    </style>
+</head>
+<body   >
+    <!-- <div id='1'></div> -->
+    <div class="row">
+        <canvas id="canvas"></canvas>
+        <ul class="col-4" id="scoreboard"><h1 ><font face="Algerian" >
+       <div id="hello"> RULES : ONLY ONE RULE EXISTS KILL AS MANY AS POSSIBLE IN 20 SECS <br>===STATUS OF YOUR TRAINING===</div>
+    </font></h1><br>
+        <div id="hey"></div>
+            <i><b id="f" > Contact Me : </b> </i>
+            <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-google"></a>
+        </ul>
+        <img id="scream" width="1" height="1" src="custume_list1.png" >
+        <audio id="audio" src="http" autoplay="false" ></audio>
+    </div>
+    <audio autoplay="true" src="/THE-GAME/public/pubg_haunted_theme.mp3"></audio>
+   
+    <!-- <div id='scoreboard'></div> -->
+</body>
+</html>
